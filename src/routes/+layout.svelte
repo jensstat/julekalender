@@ -5,16 +5,20 @@
   
 <style>
     :global(body) {
-      background-color: #f2eee2;
+      background-color: white;
       display: flex;
+      color: black;
       justify-content: center;
-      font-family: "Roboto", sans-serif;
+      font-family: 'Lobster', cursive;
       transition: background-color 0.3s
 
     }
     :global(body.dark-mode){
       background: #651515;
+      color: white;
     }
+    
+
     :root {
       --background: "#651515";
       --foreground: "#ffffff";
