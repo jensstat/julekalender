@@ -17,3 +17,9 @@ import Icon from "$lib/assets/tree.svg"
     </div>  
 
 </div>
+
+<style>
+    .filter_white{
+        opacity: 0.5;
+    }
+</style>

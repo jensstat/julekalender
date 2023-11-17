@@ -17,8 +17,11 @@
       background: #651515;
       color: white;
     }
-    
 
+    :global(body.dark-mode .filter_white) {
+      filter: invert(1) hue-rotate(180deg);
+      
+    }
     :root {
       --background: "#651515";
       --foreground: "#ffffff";

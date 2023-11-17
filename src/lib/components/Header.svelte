@@ -4,8 +4,8 @@
 
 <div class="header flex justify-between items-center">
     <h1 class="">Jens' Adventskalender</h1>
-    <h2 class="">Julen 2023</h2>
-    <div class="toggle flex flex-row items-center gap-5"><h2 class="color-gray-200">Dark Mode</h2> <Toggle/></div>
+    <h1 class="">Julen 2023</h1>
+    <div class="toggle flex flex-row items-center gap-5"><h1 class="">Dark Mode</h1> <Toggle/></div>
 </div>
 
 <style>
