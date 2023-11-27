@@ -7,7 +7,7 @@
     }
 </script>
 
-<button on:click={clicker} id="toggle">
+<button on:click={clicker} class="toggle">
     {#if click}
         <i class="indicator_move"></i>
     {:else}
@@ -17,7 +17,7 @@
 </button>
 
 <style>
-    #toggle {
+    .toggle {
         position: relative ;
         display: block;
         width: 80px;
@@ -30,7 +30,7 @@
                     inset 0 -4px 4px rgba(0,0,0,0.1);
     }
 
-    #toggle .indicator {
+    .toggle .indicator {
         position: absolute;
         top: 0;
         left: 0;

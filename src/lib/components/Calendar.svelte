@@ -2,36 +2,38 @@
     import Day from "./Day.svelte";
     let days = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
     let quotes = [
-    " ",
-    "Why don't scientists trust atoms? Because they make up everything!",
-    "Did you hear about the mathematician who’s afraid of negative numbers? He'll stop at nothing to avoid them!",
-    "I only know 25 letters of the alphabet. I don't know y.",
-    "I only know 25 letters of the alphabet. I don't know y.",
-    "Why don't skeletons fight each other? They don't have the guts.",
-    "Why did the scarecrow win an award? Because he was outstanding in his field!",
-    "How does a penguin build its house? Igloos it together!",
-    "What do you call fake spaghetti? An impasta!",
-    "Why did the coffee file a police report? It got mugged!",
-    "I told my wife she should embrace her mistakes. She gave me a hug.",
-    "What do you call a fish wearing a crown? A kingfish!",
-    "How does a penguin build its house? Igloos it together!",
-    "Why don't seagulls fly over the bay? Because then they'd be bagels!",
-    "I only know 25 letters of the alphabet. I don't know y.",
-    "Why did the bicycle fall over? Because it was two-tired!",
-    "I told my wife she should embrace her mistakes. She gave me a hug.",
-    "Why did the scarecrow win an award? Because he was outstanding in his field!",
-    "Parallel lines have so much in common. It’s a shame they’ll never meet.",
-    "Why don't skeletons fight each other? They don't have the guts.",
-    "What do you call a fish wearing a crown? A kingfish!",
-    "Why did the coffee file a police report? It got mugged!",
-    "What do you call fake spaghetti? An impasta!",
-    "Did you hear about the mathematician who’s afraid of negative numbers? He'll stop at nothing to avoid them!",
-]
+  "Hvorfor kan ikke sykler stå av seg selv? Fordi de er tohjulede!",
+  "Hva sa den ene veggen til den andre veggen? Jeg støtter deg!",
+  "Hvorfor kan ikke duoen bestemme seg? Fordi de er uenige!",
+  "Hva er et smil? Det er en lyd som en nøkkelring gjør når den kastes i søppelbøtten!",
+  "Hvorfor var fotballspilleren så god på matematikk? Fordi han alltid scoret i tillegg!",
+  "Hvorfor kan ikke duoen bestemme seg? Fordi de er uenige!",
+  "Hva gjorde den ene veggtenen til den andre vekten? Jeg tror du veier for mye!",
+  "Hvorfor var fiskens skole så dårlig? Fordi den var fylt med nulldykker!",
+  "Hva sa den ene poteten til den andre? Jeg liker deg!",
+  "Hvorfor kunne ikke sykkelen stå oppreist av seg selv? Fordi den var to-tung!",
+  "Hva kaller man en gruppe med musikalske hvaler? En orkesterskval!",
+  "Hvorfor spilte ikke skjelettene på musikk? Fordi de ikke hadde motet!",
+  "Hva sa den ene geita til den andre? Hva har du gjort, geit det til meg!",
+  "Hvorfor kan ikke nesen din være 12 tommer lang? Fordi det ville være en fot!",
+  "Hvorfor kan ikke duoen bestemme seg? Fordi de er uenige!",
+  "Hva sa den ene gulroten til den andre? Du er fantastisk!",
+  "Hvorfor har ikke telefonen hatt noen venner? Fordi den alltid er opptatt!",
+  "Hva gjør du hvis du ser en banan på gulvet? Du tråkker på den!",
+  "Hvorfor tok ikke sykkelen eksamen? Fordi den var to-tung!",
+  "Hva sa det ene eplet til det andre? Jeg har eplefølelser for deg!",
+  "Hvorfor var blyanten trøtt? Fordi den hadde alltid blytunge dager!",
+  "Hva sa den ene ketchupen til den andre? Ketch-up!",
+  "Hvorfor var det stille i biblioteket? Fordi alle bøkene var ute!",
+  "Hva sa den ene foten til den andre? Du er tråkket på min tå!",
+  "Hvorfor kan ikke duoen bestemme seg? Fordi de er uenige!",
+  "Hva sa det ene treet til det andre? Jeg savner deg allerede!",
+];
 
     let currentDay = 0;
 </script>
 
-<div class="calendar">
+<div class="calendar flex md:w-11/12 justify-center flex-wrap gap-2">
 {#if currentDay == 0}
 {#each days as day}
 <div on:click={() => {currentDay = day; console.log(currentDay)}}>
@@ -46,21 +48,14 @@
     <button class="back-button" on:click={() => {
         currentDay = 0;
     }}><span>Tilbake</span></button>
-    <div class="quote grid flex-col">
-        <span class="quote_text">{quotes[currentDay]}</span>
+    <div class="quote flex justify-center items-center mt-48">
+        <span class="quote_text text-4xl md:text-8xl/loose">{quotes[currentDay]}</span>
     </div>
     
 </div>
 {/if}
 </div>
 <style>
-    
-    .calendar {
-        display: flex;
-        height: 80vh;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
     .back-button {
         background: darkgreen;
         color: white;
@@ -69,16 +64,8 @@
         border-radius: 10px;
     }
     
-    .quote {
-        margin-top: -5vh;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;    
-    }
 
     .quote_text{
-        font-size: 80px;
         text-align: center;
     }
 
