@@ -43,11 +43,11 @@
 
 {#if currentDay != 0}
 <div class="quotepage w-full flex flex-col items-center md:block">
-    <button class="back-button mt-5 mb-5 md:mt-0 md:mb-0" on:click={() => {
+    <button class="back-button mt-5 mb-5 md:mt-0 md:mb-0 md:ml-14" on:click={() => {
         currentDay = 0;
     }}><span>Tilbake</span></button>
     <div class="flex items-center "> 
-        <div class="quote flex  dark:text-white">
+        <div class="quote flex  dark:text-white mb-11 mt-11">
             <span class="quote_text text-4xl md:text-8xl/loose">{quotes[currentDay]}</span>
         </div>
     </div>
@@ -56,7 +56,7 @@
 </div>
 <style>
     .back-button {
-        background: darkgreen;
+        background: rgb(101 163 13 / 1);
         color: white;
         width: 200px;
         padding: 5px 10px;

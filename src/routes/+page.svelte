@@ -24,7 +24,7 @@ let screenSize;
         <img src="{Icon}" class="filter_white h-28 dark:invert dark:hue-rotate-180" alt="tree">
         {/if}
         {#if screenSize < 768}
-        <img src="{Icon}" class="filter_white self-center h-32 mb-5 dark:invert dark:hue-rotate-180" alt="tree">
+        <img src="{Icon}" class="filter_white self-center  mt-12 h-32 mb-5 dark:invert dark:hue-rotate-180" alt="tree">
         {/if}
 
     </div>  

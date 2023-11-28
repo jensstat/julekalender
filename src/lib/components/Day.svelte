@@ -10,7 +10,7 @@
 <style>
 
 .day:hover{
-    color: white;
+    background-color: rgb(101 163 13 / var(--tw-bg-opacity));
     cursor: pointer;
 }
 
