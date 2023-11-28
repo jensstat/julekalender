@@ -1,11 +1,17 @@
 <script>
     let click = false
+    let darkMode = false
+
+    import { writable } from "svelte/store";
+    export const theme = writable(false);
 
     function clicker() {
         click = !click
-        document.body.classList.toggle("dark-mode")
+        document.body.classList.toggle("dark")
     }
+
 </script>
+
 
 <button on:click={clicker} class="toggle">
     {#if click}
@@ -15,7 +21,6 @@
     {/if}
 
 </button>
-
 <style>
     .toggle {
         position: relative ;

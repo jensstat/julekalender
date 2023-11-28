@@ -9,7 +9,7 @@
 </script>
 
 <div class="header">
-    <div class="flex flex-col justify-around gap-3 md:flex-row md:justify-between items-center text-center">
+    <div class="flex flex-col justify-around gap-3 md:p-7 md:flex-row md:justify-between items-center text-center dark:text-white">
         <span class="text-3xl  md:text-3xl"><div>
             <button on:click={playSong}>Jens' Adventskalender</button>
           </div></span>

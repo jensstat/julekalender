@@ -3,31 +3,32 @@ import Header from "$lib/components/Header.svelte";
 import Calendar from "$lib/components/Calendar.svelte";
 import Icon from "$lib/assets/tree.svg"
 let screenSize;
-
-
 </script>
 
 
+
 <svelte:window bind:innerWidth={screenSize} />
-<div class="flex flex-col w-screen items-center">
+    <div class="flex flex-col pt-5 md:pt-0 w-screen items-center h-full md:h-screen">
     <div class="w-8/12">
         <Header />
     </div>
 
     <div class="flex flex-col md:flex-row md:self-center md:w-11/12 lg:items-center">
         {#if screenSize < 768}
-        <img src="{Icon}" class="filter_white self-center h-32 mb-5" alt="tree">
+        <img src="{Icon}" class="filter_white self-center h-32 mb-5 dark:invert dark:hue-rotate-180" alt="tree">
         {:else}
-        <img src="{Icon}" class="filter_white h-28 " alt="tree">
+        <img src="{Icon}" class="filter_white h-32 dark:invert dark:hue-rotate-180" alt="tree">
         {/if}
         <Calendar />
         {#if screenSize > 768}
-        <img src="{Icon}" class="filter_white h-28" alt="tree">
+        <img src="{Icon}" class="filter_white h-28 dark:invert dark:hue-rotate-180" alt="tree">
+        {/if}
+        {#if screenSize < 768}
+        <img src="{Icon}" class="filter_white self-center h-32 mb-5 dark:invert dark:hue-rotate-180" alt="tree">
         {/if}
 
     </div>  
 </div>
-
 <style>
     .filter_white{
         opacity: 0.5;
