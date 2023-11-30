@@ -8,7 +8,7 @@ let screenSize;
 
 
 <svelte:window bind:innerWidth={screenSize} />
-    <div class="flex flex-col pt-5 md:pt-0 w-screen items-center h-full md:h-screen">
+    <div class="flex flex-col pt-5 md:pt-0 w-screen items-center h-full md:h-screen" >
     <div class="w-8/12">
         <Header />
     </div>

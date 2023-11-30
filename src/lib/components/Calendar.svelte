@@ -42,6 +42,7 @@
 {/if}
 
 {#if currentDay != 0}
+
 <div class="quotepage w-full flex flex-col items-center md:block">
     <button class="back-button mt-5 mb-5 md:mt-0 md:mb-0 md:ml-14" on:click={() => {
         currentDay = 0;
@@ -66,6 +67,13 @@
 
     .quote_text{
         text-align: center;
+        transform: scale(0.5);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
     }
 
     

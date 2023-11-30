@@ -13,7 +13,6 @@
     background-color: rgb(101 163 13 / var(--tw-bg-opacity));
     cursor: pointer;
 }
-
 .day-text {
     font-weight: 700;
     font-family: 'Lobster', cursive;
