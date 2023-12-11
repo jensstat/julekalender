@@ -11,7 +11,7 @@
 <div class="header">
     <div class="flex flex-col justify-around gap-3 md:p-7 md:flex-row md:justify-between items-center text-center dark:text-white">
         <span class="text-3xl md:text-4xl"><div>
-            <button on:click={playSong}>Jens og Birgittes Adventskalender</button>
+            <button on:click={playSong}>Jens Adventskalender</button>
           </div></span>
         <span class="text-2xl md:text-3xl">Julen 2023</span>
         <div class="toggle flex flex-row items-center gap-5"><span class="text-xl md:text-3xl">Dark Mode</span> <Toggle/>
